@@ -70,4 +70,4 @@ app.put('/api/tasks/:id', authenticateToken, (req, res) => {
     }
 });
 
-app.listen(port, () => { console.log(`Task manager app listening at http://localhost:${port}`); });
+app.listen(port, () => { console.log(`app listening at http://localhost:${port}`); });
