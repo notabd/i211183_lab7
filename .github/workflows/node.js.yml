@@ -27,5 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    # Removed the npm run build line since no build script
+    - run: npm run build --if-present
     - run: npm test
